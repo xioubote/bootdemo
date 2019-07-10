@@ -15,9 +15,10 @@ import java.util.List;
 
 @Mapper
 public interface UserMapper extends MyMapper<User> {
+    //第一种方式
     @Select("select * from user")
     List<User> selectAll();
 
-    //@Insert("insert into user(name) value(#{name})")
+    //第二种方式
     public int insert(User user);
 }

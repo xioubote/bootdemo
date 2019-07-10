@@ -3,6 +3,6 @@
 <mapper namespace="com.boot.demo.bootdemo.mapper.UserMapper">
     <insert id="insert" parameterType="com.boot.demo.bootdemo.domain.User" >
         insert into user (id, name, create_date)
-        values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{createDate,jdbcType=VARCHAR})
+        values (#{id}, #{name}, #{createDate})
     </insert>
 </mapper>

@@ -29,14 +29,15 @@ public class UserController {
     }
 
     @GetMapping("/addUser")
+    @ResponseBody
     public int save(){
         User user = new User();
-        user.setName("老王");
+        user.setId(1);
+        user.setName("云帆");
         return userService.save(user);
     }
-    @GetMapping("/add")
-    @ResponseBody
-    public String print(){
-        return "OK";
+    @GetMapping("/myindex")
+    public String getIndex(){
+        return "index";
     }
 }
