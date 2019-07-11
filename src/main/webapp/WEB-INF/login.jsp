@@ -1,9 +1,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Index</title>
+    <title>Login</title>
 </head>
 <body>
-    <h1>This is a index.jsp</h1>
+    <h1>This is a login.jsp</h1>
 </body>
 </html>

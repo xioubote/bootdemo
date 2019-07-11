@@ -36,8 +36,9 @@ public class UserController {
         user.setName("云帆");
         return userService.save(user);
     }
-    @GetMapping("/myindex")
-    public String getIndex(){
-        return "index";
+
+    @GetMapping("/login")
+    public String getLogin(){
+        return "login";
     }
 }

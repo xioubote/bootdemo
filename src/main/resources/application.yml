@@ -4,6 +4,10 @@ spring:
     username: root
     password: Qwer1234
     driver-class-name: com.mysql.jdbc.Driver
+  mvc:
+    view:
+      prefix: /WEB-INF/
+      suffix: .jsp
 
 mybatis:
   typeAliasesPackage: com.boot.demo.bootdemo.domain
@@ -15,9 +19,3 @@ mapper:
 
 server:
   port: 8081
-
-#设置mvc页面跳转
-mvc:
-  view:
-      prefix: /webapp/
-      suffix: .jsp
